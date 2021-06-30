@@ -16,7 +16,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-hooks" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -29,6 +29,8 @@
       <option name="presentableId" value="Default" />
       <updated>1624730480955</updated>
       <workItem from="1624730482588" duration="577000" />
+      <workItem from="1624731076943" duration="185000" />
+      <workItem from="1624862809836" duration="14000" />
     </task>
     <servers />
   </component>
@@ -36,9 +38,9 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="260" y="283" key="FileChooserDialogImpl" timestamp="1624731057524">
+    <state x="260" y="283" key="FileChooserDialogImpl" timestamp="1624862821289">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="260" y="283" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1624731057524" />
+    <state x="260" y="283" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1624862821289" />
   </component>
 </project>
