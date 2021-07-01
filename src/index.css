@@ -15,6 +15,13 @@
   src: url('../src/assets/fonts/KZSupercell-Magic.ttf');
 }
 
+input, input:before, input:after {
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+
 body {
   margin: 0;
   font-family: Supersell, sans-serif;
