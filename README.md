@@ -1,4 +1,4 @@
 # swipe-game
-swipe-num.netlify.app
+https://swipe-num.netlify.app/
 
 Swipe Game ReactJS

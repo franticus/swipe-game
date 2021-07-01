@@ -7,7 +7,9 @@ const SwipeItem = ({swiperNum, onSwipe, onKeySwipe, active}) => {
              onClick={onSwipe}
              tabIndex="0"
              onKeyDown={onKeySwipe}>
-            {swiperNum}
+            <div>
+                {swiperNum}
+            </div>
         </div>
     );
 };

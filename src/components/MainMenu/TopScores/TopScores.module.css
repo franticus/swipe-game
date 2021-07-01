@@ -1,4 +1,6 @@
-.MainMenu {
+.TopScores {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     height: 500px;
     background: rgba(0, 0, 0, .9);
@@ -9,36 +11,28 @@
     z-index: 99
 }
 
-.list {
+.top {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.TopScores ul {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100%;
-    font-size: 30px;
+    height: 400px;
+    font-size: 20px;
 }
 
-.list li {
+.TopScores ul li {
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 5px;
     transition: transform .3s ease-out;
 }
 
-.list li:hover {
-    transform: scale(1.1);
-    color: lightgoldenrodyellow;
-}
-
-.backBtn {
-    position: absolute;
-    top: 550px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 20px;
-    z-index: 100;
-}
-
-.backBtn:hover {
+.TopScores ul li:hover {
     transform: scale(1.1);
     color: lightgoldenrodyellow;
 }

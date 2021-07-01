@@ -2,19 +2,21 @@ import React, {useEffect} from 'react';
 import classes from './TileBoard.module.css'
 import Tile from "./Tile/Tile";
 import SwipeItem from "../SwipeItem/SwipeItem";
-import ControlBoard from "../ControlBoard/ControlBoard";
+import MainMenu from "../MainMenu/MainMenu";
+import FinishRes from "../MainMenu/FinishRes/FinishRes";
 
 const tiles = [
-    {id: 1, x: '0px', y: '100px'},
-    {id: 2, x: '100px', y: '0px'},
-    {id: 3, x: '200px', y: '100px'},
-    {id: 4, x: '100px', y: '200px'},
+    {id: 1, x: '0px', y: '100px', keyNum: 37},
+    {id: 2, x: '100px', y: '0px', keyNum: 38},
+    {id: 3, x: '200px', y: '100px', keyNum: 39},
+    {id: 4, x: '100px', y: '200px', keyNum: 40},
 ]
-
 
 const TileBoard = ({
                        counter, setCounter, swipesArr,
-                       setSwipesArr, swipesCopyArr, setIsStarted
+                       isStarted, setIsStarted, time, setTime,
+                       setSwipesArr, swipesCopyArr, setIsLogin,
+                       isFinished, setIsFinished, name, setName, topScores, setTopScores
                    }) => {
     console.log('Рендер')
     useEffect(() => {
@@ -40,15 +42,11 @@ const TileBoard = ({
             counter > 0 ? setCounter(counter - 1) : setCounter(0)
         }
     }
-
-    const onKeyHandler = (keyNum) => {
+    const onKeyHandler = (e) => {
         const swipesSecondArr = document.querySelectorAll('.second')
         let swipeSecondId = swipesSecondArr[arr.length - 1]
-        setIsStarted(true)
-
-        console.log(keyNum)
-
-        switch (+keyNum.target.id || keyNum.which) {
+        let clickRes = +e.target.innerText + 36
+        switch (clickRes || e.which) {
             case 37:
                 arr.pop()
                 isMatch('1', swipesArr)
@@ -76,12 +74,24 @@ const TileBoard = ({
 
     return (
         <>
+            {!isStarted &&
+            <MainMenu isStarted={isStarted}
+                      counter={counter}
+                      name={name}
+                      setName={setName}
+                      setIsLogin={setIsLogin}
+                      setIsFinished={setIsFinished}
+                      setIsStarted={setIsStarted}
+                      topScores={topScores}
+            />}
             <div className={classes.TileBoard}>
                 {tiles.map((tile, index) => (
                     <Tile key={index}
                           id={tile.id}
+                          about={tile.keyNum}
                           top={tile.y}
                           left={tile.x}
+                          onClick={(event) => onKeyHandler(event)}
                           tileNum={tile.id}/>))}
                 {swipesArr.map((el, index) => (
                         <SwipeItem swiperNum={swipesArr[index]}
@@ -100,7 +110,18 @@ const TileBoard = ({
                     )
                 )}
             </div>
-                <ControlBoard onClick={(event) => onKeyHandler(event.target.id)}/>
+            {isFinished && <FinishRes counter={counter}
+                                      setCounter={setCounter}
+                                      time={time}
+                                      name={name}
+                                      setTime={setTime}
+                                      setIsStarted={setIsStarted}
+                                      setIsFinished={setIsFinished}
+                                      topScores={topScores}
+                                      setTopScores={setTopScores}
+            />}
+            {/*<button>Menu</button>*/}
+            {/*<ControlBoard onClick={(event) => onKeyHandler(event.target.id)}/>*/}
         </>
     )
 }

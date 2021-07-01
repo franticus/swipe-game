@@ -16,7 +16,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-hooks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/MainMenu" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JS\swipegame\src\components\MainMenu\TopScores" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JS\swipegame\src\components\MainMenu" />
+      <recent name="D:\JS\swipegame\src\assets\fonts" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -31,6 +40,10 @@
       <workItem from="1624730482588" duration="577000" />
       <workItem from="1624731076943" duration="185000" />
       <workItem from="1624862809836" duration="14000" />
+      <workItem from="1625048456368" duration="6035000" />
+      <workItem from="1625072586278" duration="45000" />
+      <workItem from="1625073613477" duration="10991000" />
+      <workItem from="1625131517806" duration="13651000" />
     </task>
     <servers />
   </component>
@@ -38,9 +51,13 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="260" y="283" key="FileChooserDialogImpl" timestamp="1624862821289">
+    <state x="260" y="283" key="FileChooserDialogImpl" timestamp="1625072629199">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="260" y="283" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1624862821289" />
+    <state x="260" y="283" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1625072629199" />
+    <state x="133" y="247" key="run.anything.popup" timestamp="1625135040672">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="133" y="247" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1625135040672" />
   </component>
 </project>
